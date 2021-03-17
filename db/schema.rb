@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 2021_03_16_201223) do
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.string "username", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "username"
     t.string "user_avatar"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
